@@ -19,7 +19,7 @@
 <div class="formstyle" id="container" >
   <form action="" name="forms" id="calculator">
     <h4>By @nkush</h4>
-    <input type="text" name="answer" id="" disabled><br>
+    <input type="text" name="answer" id="myinput" disabled><br>
     <input type="button" value="7" onclick="forms.answer.value += '7'" id="button">
     <input type="button" value="8" onclick="forms.answer.value += '8'"id="button">
     <input type="button" value="9" onclick="forms.answer.value += '9'"id="button">
@@ -44,6 +44,7 @@
     <input type="button" value="/" onclick="forms.answer.value += '/'"id="button">
     
     <input type="button" value="=" onclick="forms.answer.value  = eval (forms.answer.value )"id="button">
+      <input type="button" onclick="document.getElemenyById('myinput').value ="C">
   </form>
 </div>
 </body>
